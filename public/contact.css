@@ -1,0 +1,72 @@
+#contact{
+    padding-top: 10rem;
+}
+#contact.container{
+    display:grid;
+    grid-template-columns:20rem auto;
+    gap:5rem;
+}
+#contact .container aside{
+    background-color: rgb(167, 163, 169);
+    padding: 2rem;
+    font-size: 0.9rem;
+    color:bisque;
+}
+#contact .container aside h4{
+    color: #000;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+#contact aside article{
+    display:flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+#contact aside article:last-child {
+    margin-bottom: 0;
+}
+#contact aside article i {
+    color: #000;
+    font-size: 1.2rem;
+}
+#contact aside article h5{
+    font-weight: 600;
+    color: #000;
+}
+#contact form{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+#contact form input,
+#contact textarea {
+    padding:1.4rem;
+    background-color:rgb(219, 213, 213);
+}
+#contact form input::placeholder,
+#contact textarea::placeholder {
+    color:grey;
+}
+#contact form input:focus,
+#contact textarea:focus {
+    background-color: black;
+    color:white;
+}
+#contact textarea{
+    height: 10rem;
+}
+#contact form button{
+    width:8rem;
+    background-color: black;
+    color: aliceblue;
+    cursor:pointer;
+}
+@media screen and (max-width:600px) {
+    #contact .container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+}
+
+}

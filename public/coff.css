@@ -1,0 +1,522 @@
+/* all style done whole html page*/
+/*     all the item nav bar shifted left side top corner*/
+*{
+    margin: 0;
+    padding:0;
+    outline:0;
+    border:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:url(https://img.freepik.com/free-photo/top-view-cup-coffee-with-coffee-beans-saucer-white-background_176474-5105.jpg?w=2000);
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #065104;
+    line-height: 1.7;  /*font height puri body me */
+    background-color:#fff;
+}
+.container {
+    width:84%;
+    margin: 0 auto;
+}
+h1{
+    font-size: 5.6rem;
+    line-height: 1;
+    color: #d79b04f0;
+    margin:30px;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+}
+h3{
+    font-size: 2rem;   /* coffee shop logo design*/
+    font-weight: 600;
+}
+.lead{
+    width: 63%;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 1.5rem auto 3rem;
+}
+a{
+    color:white;
+    font-weight: 300;
+}
+img{
+    width: 100%;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.3rem;
+    background-color:white ;
+    color:black ;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+    transition: all 300ms ease;
+}
+.btn-primary{
+    background-color: black;
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #fff;
+    color: black;
+    border-color:black;
+}
+.avatar {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+section{
+    max-width: 100vw;
+    padding-bottom: 12rem;
+}
+
+/******************* nav bar style ************************/
+nav{
+width: 100vw;
+height: 6rem;
+display:grid;
+place-items: center;
+top:0;
+left:0;
+z-index:2;
+background-color: rgb(4, 84, 6);
+}
+.nav_container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav button {
+    display: none;
+}
+.nav_items{
+    display:flex;
+    gap: 3rem;
+}
+.nav_logo{
+    position:absolute;
+    top: 4%;
+    left:50%;
+    transform:(-50%, -50%);
+}
+.nav_signin-signup {
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+}
+.nav_logo h3{
+    font-size: 2.7rem;
+    text-align: center;
+    margin:-5px
+}
+
+/*============================HEADER START =====================*/
+header{
+    max-width: 100vw;
+    text-align: center;
+    padding-bottom: 8rem;
+}
+.header_title {
+    padding-top: 12rem;
+}
+header p{
+    margin-bottom: 0;
+    color:black
+}
+.header_image{
+    width:85%;
+    margin:auto;
+    padding: auto;
+}
+.cta {
+    display: flex;
+    justify-content: center;
+    gap:4rem;
+}
+.cta a{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+    font-weight:400;
+    border-radius: 0.7rem;
+    padding: 0.8rem 1.6rem;
+}
+.cta.logo{
+    width: 1rem;
+}
+.cta a h4{
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.header_socials{
+    position:absolute;/* by using absolute all social item move left side*/
+    left: 3rem;
+    top: 120%;
+    display: flex;
+    flex-direction: column;
+}
+/*   about section style &&& social icon end                   */
+.about_image{
+    width:40%;
+    height:30%;
+}
+.about_title{
+    text-align: center;
+    margin-bottom:5rem;
+    color:rgb(13, 1, 1);
+}
+.about_article{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* ye use krne se image column me hoti h aur content right side pe aa jta h*/ 
+    gap:5rem;
+    align-items: center;
+    margin-top:3rem;
+}
+.about_article-title{
+    color:black;
+    margin-bottom:1.5rem;
+}
+.about_article.btn{
+    margin-top: 2.4rem;
+}
+.ram1{
+    color: black;
+}
+.ram2{
+    color: black;
+}
+.ram3{
+    color: black;
+}
+/*    end of about section  &&&& our clients style start   */
+.img1 {
+    width:60%;
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    gap: 2rem;
+}
+#clients{
+    text-align: center;
+    color: rgb(13, 12, 12);
+}
+.img1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2rem;
+}
+.img1 div{
+    background-color: rgb(134, 128, 128);
+    display: grid;
+    place-items:center;
+    height: 8rem;
+    padding: 3rem;
+    transition: all 300ms ease;
+}
+.img1 div:hover {
+    background-color: #fff;
+}
+.para{
+    color:black;
+}
+/* our clients style end       */
+/* **********************FAQ start style******************************/
+#faqs h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 4rem;
+}
+.faqs_container{
+ width:44%;
+ display:flex;
+ flex-direction: column;
+ gap: 1rem;
+}
+.faq{
+    background-color: rgb(179, 185, 185);
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    border:3px solid#ddd;
+    color: black;
+    cursor: pointer;
+}
+.faq:hover {
+    border-color:aqua;
+    color:aquamarine;
+}
+.faq_question{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.faq_answer{
+    font-size: 1rem;
+    display: none;
+}
+.faq.open {
+    border-color: blueviolet;
+    color: rgb(43, 83, 3);
+    box-shadow:0 2rem 2rem #6054ae;
+    z-index:1;
+}
+.faq.open .faq_answer{
+    display: block;
+}
+/* **********************subscribe start style******************************/
+.subscribe_container{
+    background-color: rgba(193, 3, 171, 0.648);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    height: 20rem;
+    border-radius: 2rem;
+}
+.subscribe_text p{
+    margin-top: 1.4rem;
+    width:80%;
+}
+/* **********************subscribe end style******************************/
+/* **********************footer style******************************/
+footer{
+    background-color: rgba(197, 130, 6, 0.703);
+    padding-top: 5rem;
+    font-size: 0.9rem;
+    color: #fff;
+}
+.footer_container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    gap: 5rem;
+}
+.footer_container > div h4{
+    margin-bottom: 1.6rem;
+    color:white;
+}
+.footer_logo h3{
+    font-size: 1.7rem;
+}
+.footer_1 p{
+    margin:1rem 0 2 rem;
+    width:20rem;
+}
+.footer_subscribe{
+    background:transparent;
+    border:1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:4rem;
+    width: 90%;
+}
+.footer_subscribe input{
+    background: transparent;
+    color:white;
+    margin-left: 1rem;
+}
+.footer_subscribe input::placeholder{
+    color:white;
+}
+.footer_subscribe button{
+    background: #ddd;
+    color: rgb(161, 158, 158);
+    transition: all 300ms ease;
+    width:3rem;
+    height:100%;
+    font-size: 1.2rem;
+}
+.footer_subscribe button:hover{
+    background: #fff;
+    color:rgb(85, 83, 83);
+    cursor: pointer;
+
+}
+footer ul li {
+    margin-bottom:1rem
+}
+footer ul li a:hover {
+    color: rgb(6, 61, 109);
+    text-decoration: underline;
+}
+.footer_4 p{
+    margin-bottom: 1.9rem;
+}
+.footer_socials{
+    display: flex;
+    gap:1rem;
+    font-size: 1.4rem;
+}
+.copyright{
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem;
+    border-top: 1px solid white;
+}
+/************************* tablet size **********************/
+@media screen and (max-width:1024px) {
+.container{
+        width:90%;
+ }
+  h1{
+    font-size: 4.2rem;
+  }  
+  h2{
+    font-size:2rem;
+  }
+  h3{
+    font-size: 1.9rem;
+  }
+  .lead{
+    width:72%;
+    margin-bottom: 3rem;
+
+  }
+  section{
+    padding-bottom: 8rem;
+  }
+  /**********************nav bar**********/
+  nav{
+    background-color: rgb(4, 84, 6);
+  }
+  .nav_container{
+    position:relative;
+    width:100vw;
+  }
+  .nav_logo{
+    margin-left: 2rem;
+    position:relative;
+  }
+  .nav_items{
+    position: fixed;
+    top:6rem;
+    right:0;
+    background-color: #fff;
+    height: max-content;
+    width: 18rem;
+    box-shadow: -2rem 2rem 3rem black;
+    flex-direction: column;
+    gap:0;
+    z-index:3;
+    display: none;
+}
+.nav_items li {
+    width:100%;
+    height: 6rem;
+
+}
+.nav_items li a {
+    color: black;
+    width: 100%;
+    height: 100%;
+    display:block;
+    padding-left:3rem;
+    display: flex;
+    align-items: center;
+    transition: all 400ms ease;
+}
+.nav_items a:hover {
+    background-color:green;
+    color: #fff;
+}
+.nav_signin-signup{
+    display:none;
+}
+.nav_logo{
+    position: relative;
+    left: 0;
+    transform: translate(0);
+}
+nav button{
+    display: inline-block;
+
+    margin-left: 1.4rem;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+#close-btn {
+    display: non;
+}
+nav button i {
+    font-size: 2.4rem;
+}
+/*********************************************header*********************************/
+header {
+    padding-bottom: 8rem;
+    background-color: #065104;
+}
+.header_title{
+    margin-bottom: 1.5rem;
+}
+.header_image{
+    display:none;
+}
+.cta{
+    margin-top: 3rem;
+}
+.header_socials{
+    top:40%;
+    left:8%;
+    gap:1rem;
+    font-size: 1rem;
+}
+.header_decorator-2{
+    display:none;
+}
+/******************************************** about  **********************/
+#about{
+    margin-top: 7rem;
+}
+.about_article{
+    margin:0 auto;
+}
+/**********************************clients**************************/
+.clients_container{
+    gap:1rem;
+}
+/********************subscribe*************************************/
+.subscribe_container{
+    flex-direction: column;
+    height:auto;
+    gap:5rem;
+    padding: 3rem;
+    font-size:1.2rem;
+}
+.subscribe_container p{
+    width: 94%;
+}
+/********************footer*********************/
+.footer_container{
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap:2rem;
+}
+.footer_1{
+    width:94%;
+}
+.footer_1 p{
+    width: 94%;
+    margin:0 auto 3rem;
+}
+.footer_subscribe{
+    display:none;
+
+}
+.footer_socials{
+    justify-content: center;
+}
+}
